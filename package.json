@@ -1,0 +1,85 @@
+{
+    "name": "react-croppy",
+    "version": "0.0.0",
+    "description": "Display cropped images in React",
+    "homepage": "https://github.com/sholladay/react-croppy",
+    "main": "index.js",
+    "author": {
+        "name": "Seth Holladay",
+        "url": "https://seth-holladay.com",
+        "email": "me@seth-holladay.com"
+    },
+    "scripts": {
+        "test": "xo && ava"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sholladay/react-croppy.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sholladay/react-croppy/issues",
+        "email": "me@seth-holladay.com"
+    },
+    "engines": {
+        "node": ">=8"
+    },
+    "license": "MPL-2.0",
+    "files": [
+        "index.js"
+    ],
+    "dependencies": {
+        "p-event": "^2.1.0",
+        "prop-types": "^15.6.2"
+    },
+    "peerDependencies": {
+        "react": ">=16"
+    },
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.54",
+        "@babel/preset-react": "^7.0.0-beta.54",
+        "@babel/register": "^7.0.0-beta.54",
+        "ava": "^1.0.0-beta.6",
+        "browser-env": "^3.2.5",
+        "eslint-config-tidy": "^0.6.4",
+        "eslint-config-tidy-react": "^0.3.1",
+        "eslint-plugin-react": "^7.10.0",
+        "react": "^16.4.1",
+        "react-test-renderer": "^16.4.1",
+        "xo": "^0.21.1"
+    },
+    "keywords": [
+        "react",
+        "component",
+        "components",
+        "image",
+        "crop",
+        "fit",
+        "position",
+        "cover",
+        "center",
+        "canvas"
+    ],
+    "ava": {
+        "require": [
+            "@babel/register"
+        ]
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            "@babel/plugin-transform-modules-commonjs"
+        ]
+    },
+    "xo": {
+        "extend": [
+            "tidy",
+            "tidy-react"
+        ],
+        "env": "browser",
+        "rule": {
+            "react/jsx-filename-extension": "off"
+        }
+    }
+}
