@@ -60,11 +60,11 @@ class CroppedImage extends React.Component {
         );
     }
 }
+
+export default CroppedImage
+
 CroppedImage.propTypes = {
     alt : PropTypes.string.isRequired,
     src : PropTypes.string.isRequired
 };
 
-module.exports = {
-    CroppedImage
-};
